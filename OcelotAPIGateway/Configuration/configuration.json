@@ -1,0 +1,192 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api-korisnik/{every-bit}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 63288
+        }
+      ],
+      "UpstreamPathTemplate": "/api-korisnik/{every-bit}",
+      "Key": "Korisnik",
+      "UpstreamHttpMethod": [
+        "GET",
+        "DELETE",
+        "POST",
+        "PUT"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": [
+
+        ]
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api-predmet/{every-bit}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10682
+        }
+      ],
+      "UpstreamPathTemplate": "/api-predmet/{every-bit}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "DELETE",
+        "POST",
+        "PUT"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": [
+
+        ]
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api-departman/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 63298
+        }
+      ],
+      "UpstreamPathTemplate": "/api-departman/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "DELETE",
+        "POST",
+        "PUT"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": [
+
+        ]
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api-tim/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 63280
+        }
+      ],
+      "UpstreamPathTemplate": "/api-tim/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "DELETE",
+        "POST",
+        "PUT"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": [
+
+        ]
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api-student/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 63280
+        }
+      ],
+      "UpstreamPathTemplate": "/api-student/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "DELETE",
+        "POST",
+        "PUT"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": [
+
+        ]
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api-predavac/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 63295
+        }
+      ],
+      "UpstreamPathTemplate": "/api-predavac/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "DELETE",
+        "POST",
+        "PUT"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": [
+
+        ]
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api-poruka/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 63292
+        }
+      ],
+      "UpstreamPathTemplate": "/api-poruka/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "DELETE",
+        "POST",
+        "PUT"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": [
+
+        ]
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api-kurs/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 63269
+        }
+      ],
+      "UpstreamPathTemplate": "/api-kurs/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "DELETE",
+        "POST",
+        "PUT"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": [
+
+        ]
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+
+  }
+}

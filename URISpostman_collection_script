@@ -1,0 +1,3229 @@
+{
+	"info": {
+		"_postman_id": "c97e2c0e-1337-4308-b7a4-19851cc80bed",
+		"name": "URIS",
+		"description": "SAUP testovi - grupa Mods",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Departman",
+			"item": [
+				{
+					"name": "Departman",
+					"item": [
+						{
+							"name": "GetAllDepartman",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63298/api-departman/departman",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"departman"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdDepartman",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63298/api-departman/departman/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"departman",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostDeparman",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"NazivDepartmana\": \"POST Departman test\",\n\t\"FakultetID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63298/api-departman/departman",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"departman"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutDepartman",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"DepartmanID\": 1,\n\t\"NazivDepartmana\": \"PUT Departman test\",\n\t\"FakultetID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63298/api-departman/departman",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"departman"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteDepartman",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63298/api-departman/departman/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"departman",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Fakultet",
+					"item": [
+						{
+							"name": "GetAllFakultet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63298/api-departman/fakultet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"fakultet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdFakultet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63298/api-departman/fakultet/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"fakultet",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostFakultet",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"NazivFakulteta\": \"POST Fakultet test\",\n\t\"UniverzitetID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63298/api-departman/fakultet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"fakultet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutFakultet",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"FakultetID\": 1,\n\t\"NazivFakulteta\": \"PUT Fakultet test\",\n\t\"UniverzitetID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63298/api-departman/fakultet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"fakultet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteFakultet",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63298/api-departman/fakultet/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"fakultet",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Univerzitet",
+					"item": [
+						{
+							"name": "GetAllUniverzitet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63298/api-departman/univerzitet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"univerzitet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdUniverzitet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63298/api-departman/univerzitet/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"univerzitet",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostUniverzitet",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "admin",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "admin",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"NazivUniverziteta\": \"POST Univerzitet test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63298/api-departman/univerzitet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"univerzitet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutUniverzitet",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "admin",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "admin",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"univerzitetID\": 1,\n\t\"NazivUniverziteta\": \"PUT Univerzitet test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63298/api-departman/univerzitet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"univerzitet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteUniverzitet",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "admin",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "admin",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63298/api-departman/univerzitet/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63298",
+									"path": [
+										"api-departman",
+										"univerzitet",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Predmet",
+			"item": [
+				{
+					"name": "Predmet",
+					"item": [
+						{
+							"name": "GetAllPredmet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:10682/api-predmet/predmet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "10682",
+									"path": [
+										"api-predmet",
+										"predmet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdPredmet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:10682/api-predmet/predmet/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "10682",
+									"path": [
+										"api-predmet",
+										"predmet",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostPredmet",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"NazivPredmeta\": \"POST predmet test\",\n\t\"OznakaPredmeta\": \"POPT\",\n\t\"ECTSBodovi\": 6,\n\t\"DepartmanID\": 1,\n\t\"Godina\": 2222\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:10682/api-predmet/predmet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "10682",
+									"path": [
+										"api-predmet",
+										"predmet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutPredmet",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"PredmetID\": 1,\n\t\"NazivPredmeta\": \"PUT predmet test\",\n\t\"OznakaPredmeta\": \"PUPT\",\n\t\"ECTSBodovi\": 6,\n\t\"DepartmanID\": 1,\n\t\"Godina\": 2222\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:10682/api-predmet/predmet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "10682",
+									"path": [
+										"api-predmet",
+										"predmet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeletePredmet",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:10682/api-predmet/predmet/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "10682",
+									"path": [
+										"api-predmet",
+										"predmet",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "PohadjaniPredmet",
+					"item": [
+						{
+							"name": "GetAllPohadjaniPredmet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:10682/api-predmet/pohadjanipredmet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "10682",
+									"path": [
+										"api-predmet",
+										"pohadjanipredmet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdPohadjaniPredmet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:10682/api-predmet/pohadjanipredmet/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "10682",
+									"path": [
+										"api-predmet",
+										"pohadjanipredmet",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostPohadjaniPredmet",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"BrojBodova\": 99,\n\t\"PredmetID\": 1,\n\t\"Ocena\": 10,\n\t\"StudentID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:10682/api-predmet/pohadjanipredmet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "10682",
+									"path": [
+										"api-predmet",
+										"pohadjanipredmet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutPohadjaniPredmet",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"PohadjaniPredmetID\": 1,\n\t\"BrojBodova\": 99,\n\t\"PredmetID\": 1,\n\t\"Ocena\": 10,\n\t\"StudentID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:10682/api-predmet/pohadjanipredmet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "10682",
+									"path": [
+										"api-predmet",
+										"pohadjanipredmet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeletePohadjaniPredmet",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:10682/api-predmet/pohadjanipredmet/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "10682",
+									"path": [
+										"api-predmet",
+										"pohadjanipredmet",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Korisnik",
+			"item": [
+				{
+					"name": "Korisnik",
+					"item": [
+						{
+							"name": "GetAllKorisnik",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63288/api-korisnik/korisnik",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63288",
+									"path": [
+										"api-korisnik",
+										"korisnik"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdKorisnik",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63288/api-korisnik/korisnik/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63288",
+									"path": [
+										"api-korisnik",
+										"korisnik",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostKorisnik",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"Username\": \"POST korisnik test\",\n\t\"Sifra\": \"admin\",\n\t\"Ime\": \"Test\",\n\t\"Prezime\": \"Testic\",\n\t\"Email\": \"testtest@gmail.com\",\n\t\"TrenutnaUloga\": \"Student\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63288/api-korisnik/korisnik",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63288",
+									"path": [
+										"api-korisnik",
+										"korisnik"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutKorisnik",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"KorisnikID\": 1,\n\t\"Username\": \"POST korisnik test\",\n\t\"Sifra\": \"admin\",\n\t\"Ime\": \"Test\",\n\t\"Prezime\": \"Testic\",\n\t\"Email\": \"testtestput@gmail.com\",\n\t\"TrenutnaUloga\": \"Student\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63288/api-korisnik/korisnik",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63288",
+									"path": [
+										"api-korisnik",
+										"korisnik"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteKorisnik",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63288/api-korisnik/korisnik/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63288",
+									"path": [
+										"api-korisnik",
+										"korisnik",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Student",
+					"item": [
+						{
+							"name": "GetAllStudent",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63284/api-student/student",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63284",
+									"path": [
+										"api-student",
+										"student"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIDStudent",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63284/api-student/student/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63284",
+									"path": [
+										"api-student",
+										"student",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostStudent",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"DatumRodjenaStudenta\": \"1997-03-03\",\n\t\"MestoRodjenjaStudenta\": \"Novi Sad\",\n\t\"BrojIndeksaStudenta\": \"T666/2016\",\n\t\"KatedraStudenta\": \"Test katedra\",\n\t\"StudijskiProgramStudenta\": \"Inzenjerstvo informacionih sistema\",\n\t\"RbrUpisaneGodine\": 3,\n\t\"GodinaUpisaFakulteta\": 2016,\n\t\"SifraStudenta\": \"TestSifraStudenta\",\n\t\"VrstaStudija\": \"Osnovne akademske studije\",\n\t\"StepenStudija\": \"Osnovne akademske studije\",\n\t\"GodinaStudija\": \"4\",\n\t\"NacinFinansiranja\": \"Budzet\",\n\t\"KorisnikID\": 1,\n\t\"DepartmanID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63284/api-student/student",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63284",
+									"path": [
+										"api-student",
+										"student"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutStudent",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"StudentID\": 1,\n\t\"DatumRodjenaStudenta\": \"1997-03-03\",\n\t\"MestoRodjenjaStudenta\": \"Novi Sad\",\n\t\"BrojIndeksaStudenta\": \"T666/2016\",\n\t\"KatedraStudenta\": \"Test katedra\",\n\t\"StudijskiProgramStudenta\": \"Inzenjerstvo informacionih sistema\",\n\t\"RbrUpisaneGodine\": 3,\n\t\"GodinaUpisaFakulteta\": 2016,\n\t\"SifraStudenta\": \"TestSifraStudenta\",\n\t\"VrstaStudija\": \"Osnovne akademske studije\",\n\t\"StepenStudija\": \"Osnovne akademske studije\",\n\t\"GodinaStudija\": \"4\",\n\t\"NacinFinansiranja\": \"Budzet\",\n\t\"KorisnikID\": 1,\n\t\"DepartmanID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63284/api-student/student",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63284",
+									"path": [
+										"api-student",
+										"student"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteStudent",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63284/api-student/student/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63284",
+									"path": [
+										"api-student",
+										"student",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Test",
+					"item": [
+						{
+							"name": "GetAllTest",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63284/api-student/test",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63284",
+									"path": [
+										"api-student",
+										"test"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdTest",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63284/api-student/test/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63284",
+									"path": [
+										"api-student",
+										"test",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostTest",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"StudentID\": 1,\n\t\"KursID\": 1,\n\t\"NazivTesta\": \"Test testa.\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63284/api-student/test",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63284",
+									"path": [
+										"api-student",
+										"test"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutTest",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"TestID\": 1,\n\t\"StudentID\": 1,\n\t\"KursID\": 1,\n\t\"NazivTesta\": \"Test testa.\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63284/api-student/test",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63284",
+									"path": [
+										"api-student",
+										"test"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteTest",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63284/api-student/test/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63284",
+									"path": [
+										"api-student",
+										"test",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Predavac",
+			"item": [
+				{
+					"name": "Predavac",
+					"item": [
+						{
+							"name": "GetAllPredavac",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63295/api-predavac/predavac",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63295",
+									"path": [
+										"api-predavac",
+										"predavac"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdPredavac",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63295/api-predavac/predavac/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63295",
+									"path": [
+										"api-predavac",
+										"predavac",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostPredavac",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"DatumRodjenjaPredavaca\": \"1973-01-01\",\n\t\"MestoRodjenjaPredavaca\": \"Novi Sad\",\n\t\"KatedraPredavaca\": \"Test katedra\",\n\t\"ZvanjePredavacaID\": 1,\n\t\"KorisnikID\": 2,\n\t\"DepartmanID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63295/api-predavac/predavac",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63295",
+									"path": [
+										"api-predavac",
+										"predavac"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutPredavac",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"PredavacID\": 1,\n\t\"DatumRodjenjaPredavaca\": \"1973-01-01\",\n\t\"MestoRodjenjaPredavaca\": \"Novi Sad\",\n\t\"KatedraPredavaca\": \"Test katedra\",\n\t\"ZvanjePredavacaID\": 1,\n\t\"KorisnikID\": 3,\n\t\"DepartmanID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63295/api-predavac/predavac",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63295",
+									"path": [
+										"api-predavac",
+										"predavac"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeletePredavac",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63295/api-predavac/predavac/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63295",
+									"path": [
+										"api-predavac",
+										"predavac",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ZvanjePredavaca",
+					"item": [
+						{
+							"name": "GetAllZvanjePredavaca",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63295/api-predavac/zvanje_predavaca",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63295",
+									"path": [
+										"api-predavac",
+										"zvanje_predavaca"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdZvanjePredavaca",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63295/api-predavac/zvanje_predavaca/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63295",
+									"path": [
+										"api-predavac",
+										"zvanje_predavaca",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostZvanjePredavaca",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"NazivZvanjaPredavaca\": \"Test zvanja predavaca\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63295/api-predavac/zvanje_predavaca",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63295",
+									"path": [
+										"api-predavac",
+										"zvanje_predavaca"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutZvanjePredavaca",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"ZvanjePredavacaID\": 1,\n\t\"NazivZvanjaPredavaca\": \"Test zvanja predavaca\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63295/api-predavac/zvanje_predavaca",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63295",
+									"path": [
+										"api-predavac",
+										"zvanje_predavaca"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteZvanjePredavaca",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63295/api-predavac/zvanje_predavaca/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63295",
+									"path": [
+										"api-predavac",
+										"zvanje_predavaca",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Tim",
+			"item": [
+				{
+					"name": "PostavljeniFajlovi",
+					"item": [
+						{
+							"name": "GetAllPostavljeniFajlovi",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/postavljeniFajlovi",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"postavljeniFajlovi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdPostavljeniFajlovi",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/postavljeniFajlovi/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"postavljeniFajlovi",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostPostavljeniFajlovi",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"NazivPostavljenogFajla\": \"POST Test fajl\",\n\t\"StudentID\": 1,\n\t\"TimID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63280/api-tim/postavljeniFajlovi",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"postavljeniFajlovi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutPostavljeniFajlovi",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"PostavljeniFajloviID\": 1,\n\t\"NazivPostavljenogFajla\": \"PUT Test fajl\",\n\t\"StudentID\": 1,\n\t\"TimID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63280/api-tim/postavljeniFajlovi",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"postavljeniFajlovi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeletePostavljeniFajlovi",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/postavljeniFajlovi/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"postavljeniFajlovi",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Sastanak",
+					"item": [
+						{
+							"name": "GetAllSastanak",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/sastanak",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"sastanak"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdSastanak",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/sastanak/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"sastanak",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostSastanak",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"TimID\": 1,\n\t\"PredavacID\": 1,\n\t\"VremeSastanka\": \"2020-01-01\",\n\t\"MestoSastanka\": \"ITC001\",\n\t\"PovodSastanka\": \"POST test sastanak\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63280/api-tim/sastanak",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"sastanak"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutSastanak",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"SastanakID\": 100,\n\t\"TimID\": 1,\n\t\"PredavacID\": 1,\n\t\"VremeSastanka\": \"2020-01-01\",\n\t\"MestoSastanka\": \"ITC001\",\n\t\"PovodSastanka\": \"POST test sastanak\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63280/api-tim/sastanak",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"sastanak"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteSastanak",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/sastanak/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"sastanak",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Student_Tim",
+					"item": [
+						{
+							"name": "GetAllStudent_Tim",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/student_tim",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"student_tim"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIDStudent_Tim",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/student_tim/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"student_tim",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostStudent_Tim",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"TimID\": 1,\n\t\"StudentID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63280/api-tim/student_tim",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"student_tim"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutStudent_Tim",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"StudentTimID\": 1,\n\t\"TimID\": 1,\n\t\"StudentID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63280/api-tim/student_tim",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"student_tim"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteStudent_Tim",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/student_tim/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"student_tim",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "StudentSastanak",
+					"item": [
+						{
+							"name": "GetAllStudentSastanak",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/studentSastanak",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"studentSastanak"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdStudentSastanak",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/studentSastanak/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"studentSastanak",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostStudentSastanak",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"SastanakID\": 1,\n\t\"StudentID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63280/api-tim/studentSastanak",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"studentSastanak"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutStudentSastanak",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"StudentSastanakID\": 1,\n\t\"SastanakID\": 1,\n\t\"StudentID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63280/api-tim/studentSastanak",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"studentSastanak"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteStudentSastanak",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/studentSastanak/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"studentSastanak",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Tim",
+					"item": [
+						{
+							"name": "GetAllTim",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/tim",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"tim"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdTim",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/tim/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"tim",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostTim",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"NazivTima\": \"Test tim\",\n\t\"PredavacID\": 1,\n\t\"Ocena\": 10\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63280/api-tim/tim",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"tim"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutTim",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"TimID\": 1,\n\t\"NazivTima\": \"Test tim\",\n\t\"PredavacID\": 1,\n\t\"Ocena\": 10\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63280/api-tim/tim",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"tim"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteTim",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63280/api-tim/tim/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63280",
+									"path": [
+										"api-tim",
+										"tim",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Poruka",
+			"item": [
+				{
+					"name": "Dogadjaj",
+					"item": [
+						{
+							"name": "GetAllDogadjaj",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/dogadjaj",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"dogadjaj"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdDogadjaj",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/dogadjaj/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"dogadjaj",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostDogadjaj",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"NazivDogadjaja\": \"Test dogadjaj.\",\n\t\"NotifikacijaID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/dogadjaj",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"dogadjaj"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutDogadjaj",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"DogadjajID\": 1,\n\t\"NazivDogadjaja\": \"Test dogadjaj.\",\n\t\"NotifikacijaID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/dogadjaj",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"dogadjaj"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteDogadjaj",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/dogadjaj/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"dogadjaj",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Notifikacija",
+					"item": [
+						{
+							"name": "GetAllNotifikacija",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/notifikacija",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"notifikacija"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdNotifikacija",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/notifikacija/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"notifikacija",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostNotifikacija",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"SadrzajNotifikacije\": \"Test notifikacija post.\",\n\t\"Ucestalost\": \"Svake nedelje\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/notifikacija",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"notifikacija"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutNotifikacija",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"NotifikacijaID\": 1,\n\t\"SadrzajNotifikacije\": \"Test notifikacija post.\",\n\t\"Ucestalost\": \"Svake nedelje\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/notifikacija",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"notifikacija"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteNotifikacija",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/notifikacija/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"notifikacija",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Poruka",
+					"item": [
+						{
+							"name": "GetAllPoruka",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/poruka",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"poruka"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdPoruka",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/poruka/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"poruka",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostPoruka",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"SadrzajPoruke\": \"Sadrzaj POST test poruke.\",\n\t\"Vrsta poruke\": \"Test poruka\",\n\t\"VidljivostPoruke\": \"Grupa\",\n\t\"PredavacID\": 1,\n\t\"TimID\": 1,\n\t\"StudentID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/poruka",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"poruka"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutPoruka",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"PorukaID\": 1\n\t\"SadrzajPoruke\": \"Sadrzaj PUT test poruke.\",\n\t\"Vrsta poruke\": \"Test poruka\",\n\t\"VidljivostPoruke\": \"Grupa\",\n\t\"PredavacID\": 1,\n\t\"TimID\": 1,\n\t\"StudentID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/poruka",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"poruka"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeletePoruka",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/poruka/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"poruka",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Student_Poruka_Primalac",
+					"item": [
+						{
+							"name": "GetAllStudent_Poruka_Primalac",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/student_Poruka_Primalac",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"student_Poruka_Primalac"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdStudent_Poruka_Primalac",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/student_Poruka_Primalac/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"student_Poruka_Primalac",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostStudent_Poruka_Primalac",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"PorukaID\": 1,\n\t\"StudentID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/student_Poruka_Primalac",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"student_Poruka_Primalac"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutStudent_Poruka_Primalac",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"StudentPorukaPrimalacID\": 1,\n\t\"PorukaID\": 1,\n\t\"StudentID\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/student_Poruka_Primalac",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"student_Poruka_Primalac"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteStudent_Poruka_Primalac",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/student_Poruka_Primalac/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"student_Poruka_Primalac",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ZeljeneNotifikacije",
+					"item": [
+						{
+							"name": "GetAllZeljeneNotifikacije",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/zeljeneNotifikacije",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"zeljeneNotifikacije"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdZeljeneNotifikacije",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/zeljeneNotifikacije/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"zeljeneNotifikacije",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostZeljeneNotifikacije",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"StudentID\": 1,\n\t\"NotifikacijaID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/zeljeneNotifikacije",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"zeljeneNotifikacije"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutZeljeneNotifikacije",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"ZeljeneNotifikacijeID\": 1,\n\t\"StudentID\": 1,\n\t\"NotifikacijaID\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/zeljeneNotifikacije",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"zeljeneNotifikacije"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteZeljeneNotifikacije",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63292/api-poruka/zeljeneNotifikacije/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63292",
+									"path": [
+										"api-poruka",
+										"zeljeneNotifikacije",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Kurs",
+			"item": [
+				{
+					"name": "Kurs",
+					"item": [
+						{
+							"name": "GetAllKurs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63269/api-kurs/kurs",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63269",
+									"path": [
+										"api-kurs",
+										"kurs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdKurs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63269/api-kurs/kurs/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63269",
+									"path": [
+										"api-kurs",
+										"kurs",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostKurs",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63269/api-kurs/kurs",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63269",
+									"path": [
+										"api-kurs",
+										"kurs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutKurs",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63269/api-kurs/kurs/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63269",
+									"path": [
+										"api-kurs",
+										"kurs",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteKurs",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:63269/api-kurs/kurs/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "63269",
+									"path": [
+										"api-kurs",
+										"kurs",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Materijal",
+					"item": [
+						{
+							"name": "GetAllMaterijal",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByIdMaterijal",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostMaterijal",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutMaterijal",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteMaterijal",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "AuthGetTokenAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5500/api-auth/auth?email=admin2&password=admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"api-auth",
+								"auth"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "admin2"
+								},
+								{
+									"key": "password",
+									"value": "admin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuthGetTokenStudent",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5500/api-auth/auth?email=student1&password=student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"api-auth",
+								"auth"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "student1"
+								},
+								{
+									"key": "password",
+									"value": "student"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuthGetTokenPredavac",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5500/api-auth/auth?email=predavac1&password=predavac",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"api-auth",
+								"auth"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "predavac1"
+								},
+								{
+									"key": "password",
+									"value": "predavac"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "admin",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "55e75f5f-2239-43b6-affc-bb208a998c6b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c6c4a620-5c36-4608-a21d-34ffbe0b0084",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
